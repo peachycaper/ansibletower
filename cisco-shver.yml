@@ -6,13 +6,13 @@
 #  become_method: enable
   gather_facts: false
   
-  vars: # for execution environment
+ # vars: # for execution environment
 #    ansible_connection: ansible.netcommon.network_cli
 #    ansible_network_os: cisco.ios.ios
 #    ansible_become: yes
  #   ansible_become_method: enable
     
-  tasks:
+    tasks:
     - name: run show version on the routers
       ios_command:
         commands: show version | incl Version
