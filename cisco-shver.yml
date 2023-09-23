@@ -7,8 +7,7 @@
   tasks:
     - name: run show hostname on the routers
       ios_command:
-        commands: 
-        - show hostname | hostname
+        commands: show hostname 
       register: output
 
     - name: print output
