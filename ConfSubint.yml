@@ -13,7 +13,7 @@
           - description rogi da nogi
         after:
           - end
-          - write memory
+          - copy run start
         backup: yes
       register: show_result
 
