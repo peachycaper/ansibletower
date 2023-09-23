@@ -11,10 +11,10 @@
           - encapsulation dot1Q 101
           - ip address 10.100.102.253 255.255.255.0
           - description rogi da nogi
-        after:
-          - end
+      #  after:
+      #    - end
           - copy run start
-        backup: yes
+       # backup: yes
       register: show_result
 
     - name: Debug registered var
