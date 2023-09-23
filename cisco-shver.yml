@@ -1,13 +1,13 @@
 ---
 
-- name: Cisco Show Commands
+- name: Cisco show version example
   hosts: all
   gather_facts: false
 
   tasks:
-    - name: run show hostname on the routers
+    - name: run show version on the routers
       ios_command:
-        commands: show hostname 
+        commands: show version | incl Version
       register: output
 
     - name: print output
