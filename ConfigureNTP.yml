@@ -2,6 +2,7 @@
   hosts: all
   gather_facts: no
   connection: network_cli
+  ntp_server: 10.0.1.254
   tasks:
     - name: "Configure NTP"
       ios_ntp:
